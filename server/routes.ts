@@ -24,9 +24,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const cacheKey = articleCache.generateKey({
         query: query || "",
         category: category || "all",
-        country: country || "us",
-        from: from || "",
-        to: to || "",
       });
 
       let enrichedArticles = articleCache.get(cacheKey);
@@ -35,7 +32,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         let rawArticles;
 
         if (query && query.trim()) {
-          rawArticles = await searchNews(query, from, to);
+          rawArticles = await searchNews(query, from, to, category, country);
         } else {
           const cat = category && category !== "all" ? category : undefined;
           rawArticles = await fetchTopHeadlines(cat, country, from, to);
