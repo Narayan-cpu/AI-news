@@ -123,7 +123,7 @@ Preferred communication style: Simple, everyday language.
 - **Purpose**: LLM-based article categorization and sentiment analysis
 - **Integration**: OpenAI-compatible REST API
 - **Authentication**: API key via `GROQ_API_KEY` environment variable
-- **Model**: llama-3.3-70b-versatile
+- **Model**: llama-3.3-70b
 - **Rate Limiting**: Built-in retry logic with exponential backoff
 - **Output Format**: Structured JSON with category and sentiment fields
 
