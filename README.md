@@ -143,12 +143,3 @@ Preferred communication style: Simple, everyday language.
 - **TypeScript**: Type checking across client, server, and shared code
 - **Tailwind CSS**: Utility-first styling with PostCSS processing
 
-**Development Tools (Replit-specific)**:
-- **@replit/vite-plugin-runtime-error-modal**: Error overlay for development
-- **@replit/vite-plugin-cartographer**: Code navigation helper
-- **@replit/vite-plugin-dev-banner**: Development environment indicator
-
-**Database (Configured, Not Active)**:
-- **Neon Database**: Serverless PostgreSQL with connection pooling
-- **Drizzle ORM**: Type-safe database queries with migration support
-- **connect-pg-simple**: PostgreSQL session store for Express sessions
